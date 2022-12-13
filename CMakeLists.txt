@@ -30,7 +30,13 @@ endif()
 
 LIST(APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake_modules)
 
-find_package(OpenCV 4.4)
+# set(CMAKE_PREFIX_PATH "/home/gang/data/opencv4")
+# find_package(OpenCV 4.4)
+#    if(NOT OpenCV_FOUND)
+#       message(FATAL_ERROR "OpenCV > 4.4 not found.")
+#    endif()
+
+find_package(OpenCV)
    if(NOT OpenCV_FOUND)
       message(FATAL_ERROR "OpenCV > 4.4 not found.")
    endif()
